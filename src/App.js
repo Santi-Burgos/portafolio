@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import NavBar from './components/navbar.jsx';
+import './styles/App.css';
+import Presentation from './components/presentation.jsx';
 
 function App() {
+  const [openNav, setOpenNav] = useState(false);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <NavBar open={openNav} toggleNav={() => setOpenNav(!openNav)} />
       </header>
+      <main className="body-bg">
+        <section className='presentation'>
+          <Presentation />
+        </section>
+      </main>
     </div>
   );
 }
