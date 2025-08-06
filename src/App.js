@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import NavBar from './components/navbar.jsx';
-import './styles/App.css';
 import Presentation from './components/presentation.jsx';
+import  Projects from './components/projects.jsx'
+import './styles/App.css';
 
 function App() {
   const [openNav, setOpenNav] = useState(false);
@@ -14,6 +15,14 @@ function App() {
       <main className="body-bg">
         <section className='presentation'>
           <Presentation />
+        </section>
+        <section className='projects-section' id='projects'>
+          <div>
+            <Projects />
+          </div>
+        </section>
+        <section className='stack-tech' id='stack'>
+
         </section>
       </main>
     </div>

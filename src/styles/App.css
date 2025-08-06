@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #9AA0A8;
+  background-color: #717568;
   height: 55px;
   display: flex;
   flex-direction: column;
@@ -19,14 +19,11 @@
 
 /* Nav bar Styles */
 .navbar {
-      display: flex;
+    display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
-    padding: 1rem;
     width: 100%;
     max-width: 100vw;
-    box-sizing: border-box;
-    overflow-x: hidden;
     align-items: center;
 }
 
@@ -50,8 +47,11 @@
 
 .menu li{
   padding: 5px;
+  cursor: pointer;
 }
 .menu a{
+  color: black;
+  font-size: 20px;
   text-decoration: none;
 }
 
@@ -60,6 +60,15 @@
 .body-bg{
   background: #A9D8B8;
 }
+.presentation{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3F4739;
+  color: white;
+}
 
 .profile{
   padding-top: 5px;
@@ -67,12 +76,27 @@
 
 .profile img{
   width: 75px;
+  border: 1px solid black;
   height: 75px;
   border-radius: 50px;
 }
-
+.profile-text p{
+  margin: 0px;
+  font-size: 25px;
+}
 .contact-button{
-  width: 100px; 
-  background-color: white;
+  padding: 10px 20px;
+    color: white;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-button a{
   text-decoration: none;
+  display: flex;
+  color: black;
+  align-content: center;
+  justify-content: center;
 }
