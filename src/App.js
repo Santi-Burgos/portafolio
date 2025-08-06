@@ -9,17 +9,15 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <NavBar open={openNav} toggleNav={() => setOpenNav(!openNav)} />
-      </header>
       <main className="body-bg">
         <section className='presentation'>
+          <div className='App-header'>
+            <NavBar open={openNav} toggleNav={() => setOpenNav(!openNav)} />
+          </div>
           <Presentation />
         </section>
-        <section className='projects-section' id='projects'>
-          <div>
-            <Projects />
-          </div>
+        <section className='projects-section' id='projects'>  
+          <Projects />
         </section>
         <section className='stack-tech' id='stack'>
 
