@@ -3,7 +3,9 @@ import profilePic from '../assets/images/profile.jpg';
 import projectChat from '../assets/images/chatgrupal.jpg';
 import { FaReact } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
-
+import { SiMysql } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { SiPostgresql } from "react-icons/si";
 
 
 function Projects(){
@@ -12,19 +14,28 @@ function Projects(){
             <ProjectCard 
                link ="https://github.com/Santi-Burgos/EcommerceAPI"
                name = "Ecommerce-API"
-               description= "Api para ecommerce en desarrollo, gestion de productos y pago con Mercado Pago API"
+               description= "API para e-commerce en desarrollo. Permite gestionar productos, controlar el stock, cargar imágenes y procesar pagos mediante la integración con la API de Mercado Pago. Incluye autenticación basada en tokens JWT."
                img ={profilePic}
                alt = "Imagen del proyecto"
-               stack = {[FaReact, SiExpress]}
+               stack = {[
+                    SiExpress,
+                    SiMysql,
+                    FaNodeJs
+                ]}
                linkDeploy=""
             />
             <ProjectCard 
                link ="https://github.com/Santi-Burgos/EcommerceAPI"
                name = "Chat Grupal"
-               description= "App para generar grupo, enviar mensajes en tiempo real"
+               description= "Aplicación web permite crear grupos, invitar usuarios y mantener conversaciones dentro de cada grupo. Incluye autenticación con tokens JWT, sistema de invitaciones, y mensajería instantánea implementada con WebSockets."
                img ={projectChat}
                alt = "Imagen del proyecto"
-               stack = {FaReact} 
+               stack = {[
+                    FaReact,
+                    SiExpress,
+                    SiPostgresql,
+                    FaNodeJs
+               ]} 
                linkDeploy="http://chatgrupal.netlify.app/"
             />
         </div>

@@ -1,4 +1,3 @@
-import { IconType } from "react-icons";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
@@ -14,20 +13,24 @@ const ProjectCard = ({ icon: Icon,link, name, description, img, alt, stack, link
           <p>{description}</p>
         </div>
         <div className="tech-stack">
+            <ul>
             {stack.map((Icon, index) => (
-                <Icon key={index} />
+                <li>
+                    <Icon key={index} />
+                </li>
             ))}
+            </ul>
         </div>
         <div className="buttons-links">
           <button>
             <a href={link} target="_blank" rel="noopener noreferrer">
-              Code <FaGithub/> 
+              <p>Code</p><FaGithub/> 
             </a>
           </button>
           {linkDeploy && (
             <button>
               <a href={linkDeploy} target="_blank" rel="noopener noreferrer">
-                Demo<FaArrowUpRightFromSquare />
+                <p>Demo</p><FaArrowUpRightFromSquare />
               </a>
             </button>
           )}

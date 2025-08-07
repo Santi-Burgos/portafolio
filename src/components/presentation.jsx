@@ -20,6 +20,11 @@ function Presentation() {
             <ContactButton icon={FaLinkedin} link=""  />
             <ContactButton icon={FaGithub} link="https://github.com/Santi-Burgos" />
             <ContactButton icon={FaFileDownload} link=""  />
+            <div className="button-view-projects">
+              <button>
+                <a href="#projects">Ver Proyectos</a>
+              </button>
+            </div>
         </div>
     </div>
   );
