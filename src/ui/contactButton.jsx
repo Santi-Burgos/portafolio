@@ -1,5 +1,3 @@
-import { IconType } from "react-icons";
-
 const ContactButton = ({ icon: Icon, link, name }) => {
   return (
     <button className="contact-button">
