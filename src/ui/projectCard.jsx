@@ -8,7 +8,9 @@ const ProjectCard = ({ icon: Icon,link, name, description, img, alt, stack, link
         <div className="container-image-card">
           <img src={img} alt={alt} />
         </div>
-        <p>{name}</p>
+        <div className="container-title-card">
+          <p>{name}</p>
+        </div>
         <div className="subtext-container">
           <p>{description}</p>
         </div>
