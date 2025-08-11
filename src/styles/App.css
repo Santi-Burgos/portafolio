@@ -16,7 +16,6 @@ a{
 }
 
 .App-header {
-  background-color: #2C3D55;
   height: 55px;
   display: flex;
   flex-direction: column;
@@ -24,10 +23,6 @@ a{
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 /* Nav bar Styles */
@@ -71,19 +66,19 @@ a{
 /*Presentation styles*/
 
 .body-bg{
-  background: #5FA8D3;
+  background: linear-gradient(to bottom, #2A628F, #3E92CC);
 }
 .presentation{
   width: 100vw;
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: #2C3D55;
   color: white;
 }
 
 .profile{
   padding-top: 5px;
+  font-weight: 600;
 }
 .precontenedor-profile{
   height: 100%;
@@ -101,6 +96,7 @@ a{
   margin: 0px;
   font-size: 25px;
 }
+
 .contact-button{
   padding: 10px 20px;
   color: white;
@@ -109,6 +105,11 @@ a{
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.2rem;
+}
+
+.contact-button:hover{
+  color: black;
+  background: orange;
 }
 
 .contact-button a{
@@ -165,8 +166,8 @@ a{
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
-  /*box-shadow: 10px 5px 5px black; */
 }
+
 .body-card{
     display: flex;
     padding: 10px;
@@ -187,7 +188,7 @@ a{
   object-fit: cover;
 }
 .container-image-card:hover img {
-  transform: scale(1.1); /* aumenta un 10% */
+  transform: scale(1.1);
 }
 .container-title-card p{
   font-weight: 700;
@@ -258,7 +259,6 @@ a{
     display: flex;
     width: 100vw;
     height: 100vh;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
@@ -276,3 +276,52 @@ a{
     text-align: center;
     font-weight: 600;
 } 
+
+
+/* carrousel */
+.stack-tech{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tech-carousel {
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  padding: 0 30px;
+}
+
+.carousel-item img {
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.2);
+}
+
+/* Animación continua */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+

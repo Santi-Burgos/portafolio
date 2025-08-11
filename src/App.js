@@ -3,6 +3,7 @@ import NavBar from './components/navbar.jsx';
 import Presentation from './components/presentation.jsx';
 import  Projects from './components/projects.jsx'
 import About from './components/about.jsx';
+import Carousel from './ui/carrousel.jsx'
 import { FaCode } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa6";
 
@@ -27,6 +28,7 @@ function App() {
           <Projects />
         </section>
         <section className='stack-tech' id='stack'>
+          <Carousel />
         </section>
         <section className='about-me' id='about'>
           <div className='projects-presentation'>
