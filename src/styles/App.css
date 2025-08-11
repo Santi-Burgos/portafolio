@@ -42,15 +42,30 @@ a{
   cursor: pointer;
   font-size: 2rem;
   align-self: flex-start;
+  outline: none;
   z-index: 10;
 }
 
 .menu {
   list-style: none;
   padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
   display: flex;
-  gap: 1rem;
-  width: 100%; 
+  flex-direction: row-reverse;
+}
+
+.menu.open {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.menu.open{
+    display: inline-flex;
+    flex-direction: row-reverse;
 }
 
 .menu li{
@@ -61,6 +76,7 @@ a{
   color: black;
   font-size: 20px;
   text-decoration: none;
+  font-weight: 600;
 }
 
 /*Presentation styles*/
