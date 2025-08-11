@@ -20,12 +20,14 @@ function App() {
             <NavBar open={openNav} toggleNav={() => setOpenNav(!openNav)} />
           </div>
           <Presentation />
+          <div className="section-divider"></div>
         </section>
         <section className='projects-section' id='projects'>
           <div className='projects-presentation'>
             <h2><FaCode/><p>PROYECTOS</p></h2>
           </div>
           <Projects />
+           <div className="section-divider"></div>
         </section>
         <section className='stack-tech' id='stack'>
           <Carousel />

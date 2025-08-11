@@ -2,6 +2,8 @@ import ContactButton from "../ui/contactButton.jsx";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFileDownload } from "react-icons/fa";
+import { FaLevelDownAlt } from "react-icons/fa";
+
 import profilePic from '../assets/images/profile.jpg';
 
 
@@ -17,14 +19,16 @@ function Presentation() {
         </div>
         </div>        
         <div className="buttons-section">
+          <div className="buttons-container">
             <ContactButton icon={FaLinkedin} link=""  />
             <ContactButton icon={FaGithub} link="https://github.com/Santi-Burgos" />
             <ContactButton icon={FaFileDownload} link=""  />
-            <div className="button-view-projects">
-              <button>
-                <a href="#projects">Ver Proyectos</a>
-              </button>
-            </div>
+          </div>
+          <div className="button-view-projects">
+            <button>
+              <a href="#projects"><p>Ver Proyectos</p><FaLevelDownAlt/></a>
+            </button>
+          </div>
         </div>
     </div>
   );

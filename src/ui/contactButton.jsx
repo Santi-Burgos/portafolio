@@ -9,4 +9,3 @@ const ContactButton = ({ icon: Icon, link, name }) => {
 };
 
 export default ContactButton;
-
