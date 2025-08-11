@@ -47,6 +47,7 @@ html {
   align-self: flex-start;
   outline: none;
   z-index: 10;
+  color: white;
 }
 
 .menu {
@@ -76,7 +77,7 @@ html {
   cursor: pointer;
 }
 .menu a{
-  color: black;
+  color: white;
   font-size: 20px;
   text-decoration: none;
   font-weight: 600;
@@ -90,7 +91,7 @@ html {
   background: linear-gradient(
     to right,
     rgba(100, 149, 237, 0),   
-    rgba( 230, 241, 74, 0.5),
+    rgba( 19, 181, 99, 0.5),
     rgba(100, 149, 237, 0)   
   );
 }
@@ -200,6 +201,7 @@ font-size: 1.1rem;
 .projects-presentation h2{
   display: inline-flex;
   align-items: center;
+  color: white;
 }
 .projects-presentation p{
   margin: 0px 0px 0px 3px;
@@ -343,17 +345,17 @@ font-size: 1.1rem;
 .about-text p{ 
     text-align: center;
     font-weight: 600;
+    color: white;
 } 
 
 
 /* carrousel */
 .stack-tech{
-    margin: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-
 
 .tech-carousel {
   overflow: hidden;

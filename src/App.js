@@ -27,10 +27,11 @@ function App() {
             <h2><FaCode/><p>PROYECTOS</p></h2>
           </div>
           <Projects />
-           <div className="section-divider"></div>
+          <div className="section-divider"></div>
         </section>
         <section className='stack-tech' id='stack'>
           <Carousel />
+        <div className="section-divider"></div>
         </section>
         <section className='about-me' id='about'>
           <div className='projects-presentation'>
