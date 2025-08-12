@@ -19,6 +19,9 @@ html {
 }
 
 .App-header {
+  position: fixed;
+
+  width: 100%;
   height: 55px;
   display: flex;
   flex-direction: column;
@@ -26,8 +29,21 @@ html {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  z-index: 1;
 }
+.open-header{
+  background: rgba(1, 22, 39, 0.8);
+  backdrop-filter: blur(8px);
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; 
 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+
+  transition: background 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+}
 /* Nav bar Styles */
 .navbar {
     display: flex;
@@ -76,6 +92,11 @@ html {
   padding: 5px;
   cursor: pointer;
 }
+.menu li:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
 .menu a{
   color: white;
   font-size: 20px;
@@ -108,16 +129,20 @@ html {
   color: white;
 }
 
+.precontenedor-profile{
+  height: 96%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .profile{
   padding-top: 5px;
   font-weight: 600;
+  
 }
-.precontenedor-profile{
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
+
 .container-image{
   width: 100%;
   display: flex;

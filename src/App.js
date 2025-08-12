@@ -16,9 +16,7 @@ function App() {
     <div className="App">
       <main className="body-bg">
         <section className='presentation' id='presentation'>
-          <div className='App-header'>
-            <NavBar open={openNav} toggleNav={() => setOpenNav(!openNav)} />
-          </div>
+          <NavBar open={openNav} toggleNav={() => setOpenNav(!openNav)} />
           <Presentation />
           <div className="section-divider"></div>
         </section>

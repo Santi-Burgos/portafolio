@@ -17,7 +17,7 @@ const ProjectCard = ({ icon: Icon,link, name, description, img, alt, stack, link
         <div className="tech-stack">
             <ul>
             {stack.map((Icon, index) => (
-                <li>
+                <li key={index}>
                     <Icon key={index} />
                 </li>
             ))}
