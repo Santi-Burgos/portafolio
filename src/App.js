@@ -24,7 +24,7 @@ function App() {
         </section>
         <section className='projects-section' id='projects'>
           <div className='projects-presentation'>
-            <h2><FaCode/><p>PROYECTOS</p></h2>
+            <h2 className="gradient-text"><FaCode/><p>PROYECTOS</p></h2>
           </div>
           <Projects />
           <div className="section-divider"></div>
@@ -35,7 +35,7 @@ function App() {
         </section>
         <section className='about-me' id='about'>
           <div className='projects-presentation'>
-            <h2><FaLaptopCode/><p>SOBRE MÍ</p></h2>
+            <h2 className="gradient-text"><FaLaptopCode/><p>SOBRE MÍ</p></h2>
           </div>
           <About />
         </section>
