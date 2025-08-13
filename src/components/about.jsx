@@ -1,10 +1,13 @@
 import profilePic from '../assets/images/profile.jpg';
+import Interests from '../ui/skill.jsx';
 
 function About(){
    return(
     <div className="">
-        <div className="">
-            <img src={profilePic} alt="Foto de perfil"/>
+        <div className='container-image'>
+            <div className="border-image">
+                <img src={profilePic} alt="Profile-Picture" />
+            </div>
         </div>
         <div className="">
             <div className="about-text">
@@ -14,6 +17,7 @@ function About(){
                     Tengo conocimientos básicos de frontend y me interesa seguir creciendo en entornos donde pueda aportar en la construcción de soluciones escalables
                 </p>
             </div>
+            <Interests/>
         </div>
     </div>
     )

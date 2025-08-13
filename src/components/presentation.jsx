@@ -4,8 +4,6 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaFileDownload } from "react-icons/fa";
 import { GoProjectSymlink } from "react-icons/go";
 
-
-
 import profilePic from '../assets/images/profile.jpg';
 
 
