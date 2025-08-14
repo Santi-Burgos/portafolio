@@ -1,11 +1,14 @@
 const ContactButton = ({ icon: Icon, link, name }) => {
   return (
-    <button className="contact-button">
-      <a href={link} target="_blank" rel="noopener noreferrer">
-       {name}<Icon />
-      </a>
-    </button>
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="contact-button"
+    >
+      <span className="contact-icon"><Icon /></span>
+
+    </a>
   );
 };
-
 export default ContactButton;
