@@ -17,6 +17,9 @@ html {
 .App {
   text-align: center;
 }
+.body-bg{
+  background-color: #011627;
+}
 
 .App-header {
   position: fixed;
@@ -118,9 +121,7 @@ html {
 }
 /*Presentation styles*/
 
-.body-bg{
-  background-color: #011627;
-}
+
 .presentation{
   width: 100vw;
   height: 100vh;
@@ -403,6 +404,11 @@ font-size: 1.1rem;
   padding: 0 30px;
 }
 
+.carousel-item p{
+    margin: 1px;
+    color: white;
+}
+
 .carousel-item img {
   height: 40px;
   transition: transform 0.3s ease;
@@ -465,8 +471,31 @@ font-size: 1.1rem;
     color: white;
 }
 
+/* MEDIAQUERYS */
 
 
+@media (min-width: 920px) {
 
+  .about-footer{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
 
+  }
+  .about-text{
+    width: 70%;
+  }
+  .interests-container{
+    width: 70%;
+  }
+  .interests-container h3{
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 1280px) {
+  
+}
 

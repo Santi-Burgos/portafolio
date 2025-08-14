@@ -9,7 +9,7 @@ function About(){
                 <img src={profilePic} alt="Profile-Picture" />
             </div>
         </div>
-        <div className="">
+        <div className="about-footer">
             <div className="about-text">
                 <p>
                     Desarrollador web junior con orientación al backend y formación práctica en desarrollo con JavaScript, 

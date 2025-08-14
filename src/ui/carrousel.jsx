@@ -27,6 +27,7 @@ export default function Carousel() {
         {[...images, ...images].map((item, i) => (
           <div className="carousel-item" key={i}>
             <img src={item.src} alt={item.name} title={item.name} />
+            <p>{item.name}</p>
           </div>
         ))}
       </div>

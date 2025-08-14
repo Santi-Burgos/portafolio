@@ -17,12 +17,12 @@ function Presentation() {
               <img src={profilePic} alt="Profile-Picture" />
             </div>
           </div>
-        <div className="profile-text">
+        </div>      
+        <div className="buttons-section">
+          <div className="profile-text">
             <h1 className="gradient-text">Santiago Burgos</h1>
             <h2 className="gradient-text">Backend developer</h2>
-        </div>
-        </div>        
-        <div className="buttons-section">
+          </div>  
           <div className="buttons-container">
             <ContactButton icon={FaLinkedin} link=""  />
             <ContactButton icon={FaGithub} link="https://github.com/Santi-Burgos" />
