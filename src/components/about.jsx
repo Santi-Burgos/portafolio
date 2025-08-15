@@ -11,8 +11,8 @@ function About(){
             <div className="about-text">
                 <p>
                     Desarrollador web junior con orientación al backend y formación práctica en desarrollo con JavaScript, 
-                    principalmente utilizando Node.js y Express. He trabajado en proyectos personales, lo que me ha permitido fortalecer mis habilidades en diseño y desarrollo de servidores.
-                    Tengo conocimientos básicos de frontend y me interesa seguir creciendo en entornos donde pueda aportar en la construcción de soluciones escalables.
+                    principalmente utilizando Node.js y Express. He trabajado en proyectos personales, lo que me ha permitido fortalecer mis habilidades en diseño y desarrollo.
+                    Tengo conocimientos de frontend y me interesa seguir creciendo en entornos donde pueda aportar en la construcción de soluciones escalables.
                 </p>
             </div>
         </div>
