@@ -18,7 +18,7 @@ function Projects(){
                img ={profilePic}
                alt = "Imagen del proyecto"
                stack = {[
-                    SiExpress,
+                    SiExpress, 
                     SiMysql,
                     FaNodeJs
                 ]}

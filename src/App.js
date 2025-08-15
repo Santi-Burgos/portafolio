@@ -24,19 +24,22 @@ function App() {
           <div className='projects-presentation'>
             <h2 className="gradient-text"><FaCode/><p>PROYECTOS</p></h2>
           </div>
-          <Projects />
+            <Projects />
+
           <div className="section-divider"></div>
         </section>
         <section className='stack-tech' id='stack'>
           <Carousel />
         <div className="section-divider"></div>
         </section>
-        <section className='about-me' id='about'>
-          <div className='projects-presentation'>
-            <h2 className="gradient-text"><FaLaptopCode/><p>SOBRE MÍ</p></h2>
-          </div>
-          <About />
-        </section>
+          <section className='about-me' id='about'>
+            <div className='projects-presentation'>
+              <h2 className="gradient-text"><FaLaptopCode/><p>SOBRE MÍ</p></h2>
+            </div>
+            <div className='container-about'>
+            <About />
+            </div>
+          </section>
       </main>
     </div>
   );

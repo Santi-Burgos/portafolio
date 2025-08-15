@@ -13,7 +13,7 @@ function Presentation() {
         <div className="container-profile">
           <div className="profile-text">
             <h1 className="gradient-text">Burgos <span className="block-name">Santiago</span></h1>
-            <h2 className="gradient-text">FullStack developer</h2>
+            <h2 className="gradient-text">Software developer</h2>
           </div>  
           <div className="buttons-container">
             <ContactButton icon={FaLinkedin} link=""  />

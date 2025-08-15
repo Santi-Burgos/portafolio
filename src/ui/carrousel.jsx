@@ -1,7 +1,6 @@
 import cssIcon from "../assets/icons/css.svg";
 import Expressjs from "../assets/icons/Express.js_dark.svg";
 import git from "../assets/icons/git.svg";
-import GitHub from "../assets/icons/GitHub_dark.svg";
 import mysql from "../assets/icons/mysql.svg";
 import nodejs from "../assets/icons/nodejs.svg";
 import postgresql from "../assets/icons/postgresql.svg";
@@ -17,14 +16,15 @@ const images = [
     { src: postgresql, name: "PostgreSQL" },
     { src: cssIcon, name: "CSS" },
     { src: git, name: "Git" },
-    { src: GitHub, name: "GitHub" },
 ];
 
 export default function Carousel() {
+  const items = [...images, ...images];
+
   return (
     <div className="tech-carousel">
       <div className="carousel-track">
-        {[...images, ...images].map((item, i) => (
+        {items.map((item, i) => (
           <div className="carousel-item" key={i}>
             <img src={item.src} alt={item.name} title={item.name} />
             <p>{item.name}</p>
