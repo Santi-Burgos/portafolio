@@ -5,10 +5,9 @@ function About(){
    return(
     <div className="about-me-content">
         <div className="about-details">
-            <div className='container-image'>
+            <div className='container-image-text'>
                 <img src={profilePic} alt="Profile-Picture" />
             </div>
-            <div className='container-rest'>
             <div className="about-text">
                 <p>
                     Desarrollador web junior con orientación al backend y formación práctica en desarrollo con JavaScript, 
@@ -16,9 +15,8 @@ function About(){
                     Tengo conocimientos básicos de frontend y me interesa seguir creciendo en entornos donde pueda aportar en la construcción de soluciones escalables.
                 </p>
             </div>
-            <Interests/>
         </div>
-        </div>
+        <Interests/>
     </div>
     )
 }

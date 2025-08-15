@@ -486,7 +486,6 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 
 .about-me-content img {
@@ -505,7 +504,7 @@ html {
 }
 
 .about-text {
-  margin: 10px 0;
+  margin: 10px;
   padding: 0px 10px 0px 10px;
   border: 1px solid rgba(255,255,255,0.1);
   background: rgba(54,66,76,0.75);
@@ -593,9 +592,6 @@ html {
     display: flex;
     justify-content: center;
   }
-  .container-image{
-
-  }
   .container-rest{
         width: 50%;
   }
@@ -606,10 +602,14 @@ html {
   }
 .about-me-content {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: flex-start;
         gap: 1.5rem;
         width: 100%;
+  }
+
+  .about-me-content img {
+    margin-bottom: 0;
   }
 
   .about-details {
@@ -631,14 +631,48 @@ html {
   }
   .about-text p {
     text-align: left;
+    margin: 5px;
+
   }
   .interests-container{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
   }
   .interests-list {
-    justify-content: flex-start;
     margin-left: 0;
   }
 }
 
+@media (min-width: 1440px){
+  .profile-text h1{
+    font-size: 6rem;
+  }
+  .profile-text h2{
+    font-size: 3.5rem;
+  }
+
+  .tech-carousel{
+    width: 50%;
+  }
+}
+@media (min-width: 1920px){
+  .profile-text h1{
+    font-size: 9rem;
+  }
+  .block-name{
+    margin-top: -50px;
+  }
+  .profile-text h2{
+    font-size: 3.5rem;
+  }
+  .available-box {
+        padding: 15px 30px;
+    }
+
+  .tech-carousel{
+    width: 40%;
+  }
+}
