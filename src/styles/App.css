@@ -1,9 +1,9 @@
 body{
+  overflow-x: hidden;
   font-family: "Geist", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  overflow-x: hidden;
 }
 a{
   font-family: "Geist", sans-serif;
