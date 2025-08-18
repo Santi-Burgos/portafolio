@@ -24,7 +24,6 @@ html {
 
 .App-header {
   position: fixed;
-
   width: 100%;
   height: 55px;
   display: flex;
@@ -132,7 +131,7 @@ html {
 }
 .block-name {
   display: block;
-  margin-top: -8px;
+  margin-top: -10px;
 }
 .precontenedor-profile{
   height: 96%;
@@ -149,12 +148,12 @@ html {
 
 .profile-text h1{
   margin: 5px 0px 0px 0px;
-  font-size: 45px;
+  font-size: 3rem;
   font-weight: 600;
 }
 .profile-text h2{
   margin: 0px;
-  font-size: 35px;
+  font-size: 2.2rem;
   font-weight: 600;
 }
 .gradient-text {
@@ -287,6 +286,7 @@ html {
 
 .projects-presentation h2{
   display: inline-flex;
+  font-size: 2.1rem;
   align-items: center;
   color: white;
 }
@@ -324,7 +324,7 @@ html {
   height: 125px;
 }
 .container-title-card p{
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 10px;
 }
 .container-image-card img{
@@ -368,15 +368,16 @@ html {
 
  .tech-stack li {
     align-items: center;
-    background: linear-gradient(90deg, #011627 0%, #4f5d75 100%);
+    background: linear-gradient(90deg, rgb(1 22 39 / 27%) 0%, #edf3ff 100%);
     border-radius: 6px;
-    color: white;
+    color: black;
     display: flex;
     font-size: 1.2rem;
     font-weight: 500;
     gap: 4px;
     padding: 0.2rem 0.6rem;
   } 
+  
 .tech-stack li svg{
   font-size: 1.2rem;
 }
@@ -431,6 +432,7 @@ html {
 }
 
 .tech-carousel {
+  position: relative;
   overflow: hidden;
   width: 80%;
   padding: 10px 0;
@@ -459,6 +461,34 @@ html {
 
 .carousel-item img:hover {
   transform: scale(1.2);
+}
+.tech-carousel::before,
+.tech-carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.tech-carousel::before {
+  left: 0;
+   background: linear-gradient(
+    to right, 
+    #011627 0%,      
+    rgba(1, 22, 39, 0) 100% 
+  );
+}
+
+.tech-carousel::after {
+  right: 0;
+   background: linear-gradient(
+    to left, 
+    #011627 0%,      
+    rgba(1, 22, 39, 0) 100% 
+  );
 }
 
 /* Animación continua */
@@ -531,6 +561,10 @@ html {
   gap: 6px;
 }
 
+.interests-list h3{
+  font-size: 1.5rem;
+}
+
 .interests-list span {
   background: rgba(54, 66, 76, 0.8);
   border: 1px solid rgba(255,255,255,0.1);
@@ -547,6 +581,9 @@ html {
 @media (min-width: 900px) {
   .profile-text h1{
     font-size: 5rem;
+  }
+  .block-name{
+      margin-top: -20px;
   }
   .profile-text h2{
     font-size: 3rem;
@@ -582,6 +619,9 @@ html {
 }
 
 @media (min-width: 1250px) {
+  .block-name{
+      margin-top: -20px;
+  }
   .tech-carousel{
     width: 60%;
   }
@@ -650,7 +690,10 @@ html {
 
 @media (min-width: 1440px){
   .profile-text h1{
-    font-size: 6rem;
+    font-size: 6.5rem;
+  }
+  .block-name{
+    margin-top: -25px;
   }
   .profile-text h2{
     font-size: 3.5rem;

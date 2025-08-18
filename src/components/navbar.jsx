@@ -11,13 +11,13 @@ function NavBar({ open, toggleNav }) {
         </button>
 
         <ul className={`menu ${open ? "open" : ""}`}>
-          <li><a href="#contact">Contacto</a></li>
           <li><a href="#about">Sobre mí</a></li>
           <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#presentation">Inicio</a></li>
         </ul>
       </nav>
     </div>
-  );
+  );  
 }
 
 export default NavBar;

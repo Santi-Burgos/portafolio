@@ -1,5 +1,5 @@
 import ProjectCard from "../ui/projectCard.jsx";
-import profilePic from '../assets/images/profile.jpg';
+import apiEcommerce from '../assets/images/apiecommerce.jfif';
 import projectChat from '../assets/images/chatgrupal.jpg';
 import { FaReact } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
@@ -15,7 +15,7 @@ function Projects(){
                link ="https://github.com/Santi-Burgos/EcommerceAPI"
                name = "Ecommerce-API"
                description= "API para e-commerce en desarrollo. Permite gestionar productos, controlar el stock, cargar imágenes y procesar pagos mediante la integración con la API de Mercado Pago. Incluye autenticación basada en tokens JWT."
-               img ={profilePic}
+               img ={apiEcommerce}
                alt = "Imagen del proyecto"
                stack = {[
                     SiExpress, 
@@ -25,11 +25,12 @@ function Projects(){
                linkDeploy=""
             />
             <ProjectCard 
-               link ="https://github.com/Santi-Burgos/EcommerceAPI"
+               link ="https://github.com/Santi-Burgos/group-projec"
                name = "Chat Grupal"
                description= "Aplicación web permite crear grupos, invitar usuarios y mantener conversaciones dentro de cada grupo. Incluye autenticación con tokens JWT, sistema de invitaciones, y mensajería instantánea implementada con WebSockets."
                img ={projectChat}
                alt = "Imagen del proyecto"
+               linkFront="https://github.com/Santi-Burgos/group-project-frontend"
                stack = {[
                     FaReact,
                     SiExpress,

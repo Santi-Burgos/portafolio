@@ -1,7 +1,7 @@
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
-const ProjectCard = ({ icon: Icon,link, name, description, img, alt, stack, linkDeploy}) => {
+const ProjectCard = ({ icon: Icon,link, name, description, img, alt, stack, linkFront, linkDeploy}) => {
   return (
     <div className="projects-card">
       <div className="body-card">
@@ -26,9 +26,16 @@ const ProjectCard = ({ icon: Icon,link, name, description, img, alt, stack, link
         <div className="buttons-links">
           <button>
             <a href={link} target="_blank" rel="noopener noreferrer">
-              <p>Code</p><FaGithub/> 
+              <p>Backend</p><FaGithub/> 
             </a>
           </button>
+          {linkFront && (
+             <button>
+              <a href={linkFront} target="_blank" rel="noopener noreferrer">
+                <p>Frontend</p><FaGithub />
+              </a>
+            </button>
+          )}
           {linkDeploy && (
             <button>
               <a href={linkDeploy} target="_blank" rel="noopener noreferrer">

@@ -1,9 +1,9 @@
 import ContactButton from "../ui/contactButton.jsx";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-import { FaFileDownload } from "react-icons/fa";
 import { GoCheckCircle } from "react-icons/go";
 import { IoCloudDownloadOutline } from "react-icons/io5";
+import { BiLogoGmail } from "react-icons/bi";
 
 
 
@@ -16,9 +16,9 @@ function Presentation() {
             <h2 className="gradient-text">Software developer</h2>
           </div>  
           <div className="buttons-container">
-            <ContactButton icon={FaLinkedin} link=""  />
+            <ContactButton icon={FaLinkedin} link="https://www.linkedin.com/in/santiago-burgos-914215246/"  />
             <ContactButton icon={FaGithub} link="https://github.com/Santi-Burgos" />
-            <ContactButton icon={FaFileDownload} link=""  />
+            <ContactButton icon={BiLogoGmail} email="santiburgos38@gmail.com"  />
           </div>
         <div className="button-view-projects">
               <div className="status-buttons">
@@ -27,7 +27,7 @@ function Presentation() {
                   <span className="available-text">Disponible</span>
                 </div>
                 <a
-                  href="/cv.pdf"
+                  href="/Santiago-BurgosCV.pdf"
                   className="download-box"
                   target="_blank"
                   rel="noopener noreferrer" 
