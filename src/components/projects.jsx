@@ -1,6 +1,6 @@
 import ProjectCard from "../ui/projectCard.jsx";
 import apiEcommerce from '../assets/images/apiecommerce.jfif';
-import projectChat from '../assets/images/chatgrupal.jpg';
+import projectChat from '../assets/images/chatgrupal.jfif';
 import { FaReact } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
