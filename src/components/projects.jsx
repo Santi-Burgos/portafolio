@@ -16,7 +16,7 @@ function Projects(){
                name = "Ecommerce-API"
                description= "API para e-commerce en desarrollo. Permite gestionar productos, controlar el stock, cargar imágenes y procesar pagos mediante la integración con la API de Mercado Pago. Incluye autenticación basada en tokens JWT."
                img ={apiEcommerce}
-               alt = "Imagen del proyecto"
+               alt = "Imagen API ecommerce"
                stack = {[
                     SiExpress, 
                     SiMysql,
@@ -29,7 +29,7 @@ function Projects(){
                name = "Chat Grupal"
                description= "Aplicación web permite crear grupos, invitar usuarios y mantener conversaciones dentro de cada grupo. Incluye autenticación con tokens JWT, sistema de invitaciones, y mensajería instantánea implementada con WebSockets."
                img ={projectChat}
-               alt = "Imagen del proyecto"
+               alt = "Imagen chatgrupal"
                linkFront="https://github.com/Santi-Burgos/group-project-frontend"
                stack = {[
                     FaReact,
