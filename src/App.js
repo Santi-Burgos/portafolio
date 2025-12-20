@@ -20,12 +20,16 @@ function App() {
           <Presentation />
           <div className="section-divider"></div>
         </section>
+
+        <section className='experience' id='experience'>
+          
+        </section>
+
         <section className='projects-section' id='projects'>
           <div className='projects-presentation'>
-            <h2 className="gradient-text"><FaCode/><p>PROYECTOS</p></h2>
+            <h2 className="gradient-text"><FaCode/><p>PROYECTOS PERSONALES</p></h2>
           </div>
             <Projects />
-
           <div className="section-divider"></div>
         </section>
         <section className='stack-tech' id='stack'>

@@ -8,12 +8,12 @@ import reactIcon from "../assets/icons/React_dark.svg";
 import javaScript from "../assets/icons/javascript.svg";
 
 const images = [
+  { src: nodejs, name: "Node.js" },
     {src: javaScript, name: "JavaScript"},
-    { src: nodejs, name: "Node.js" },
     { src: Expressjs, name: "Express.js" },
-    { src: reactIcon, name: "React" },
     { src: mysql, name: "MySQL" },
     { src: postgresql, name: "PostgreSQL" },
+    { src: reactIcon, name: "React" },
     { src: cssIcon, name: "CSS" },
     { src: git, name: "Git" },
 ];
