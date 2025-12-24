@@ -9,13 +9,13 @@ import javaScript from "../assets/icons/javascript.svg";
 
 const images = [
   { src: nodejs, name: "Node.js" },
-    {src: javaScript, name: "JavaScript"},
-    { src: Expressjs, name: "Express.js" },
-    { src: mysql, name: "MySQL" },
-    { src: postgresql, name: "PostgreSQL" },
-    { src: reactIcon, name: "React" },
-    { src: cssIcon, name: "CSS" },
-    { src: git, name: "Git" },
+  {src: javaScript, name: "JavaScript"},
+  { src: Expressjs, name: "Express.js" },
+  { src: mysql, name: "MySQL" },
+  { src: postgresql, name: "PostgreSQL" },
+  { src: reactIcon, name: "React" },
+  { src: cssIcon, name: "CSS" },
+  { src: git, name: "Git" },
 ];
 
 export default function Carousel() {

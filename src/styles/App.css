@@ -576,6 +576,135 @@ html {
   font-weight: 500;
 }
 
+/* experience */
+.experience-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px; 
+  margin: 80px 10px 20px 10px; 
+  background-color: white;
+  border-radius: 12px;
+  overflow: visible; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.experience-card > div:nth-child(2) {
+  padding: 4.5rem 1.5rem 1.5rem 1.5rem; 
+  text-align: center;
+  color: #011627;
+}
+
+.profile-company {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: -4rem;
+  transform: translateX(-50%);
+  border: 3px solid #21e6c1;
+  background-color: white; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-company img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.experience-card li {
+  text-align: left;
+  list-style: none;
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+.experience-card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #011627;
+}
+
+.experience-body {
+  padding: 5.5rem 2rem 2.5rem 2rem;
+  text-align: center;
+}
+
+.experience-body h2 {
+  color: var(--primary-dark);
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  font-weight: 800;
+}
+
+.experience-role {
+  color: var(--accent-teal);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0;
+  background: rgba(33, 236, 193, 0.1); 
+  display: inline-block;
+  padding: 2px 12px;
+  border-radius: 20px;
+}
+
+.experience-period {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 10px 0 20px 0;
+  font-weight: 500;
+}
+
+.experience-intro {
+  color: var(--primary-dark);
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.achievements-list {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievement-item {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+.achievement-item::before {
+  content: "{}";
+  position: absolute;
+  left: 0;
+  color: var(--accent-teal);
+  font-weight: bold;
+}
+
+.achievement-title {
+  display: block;
+  font-weight: 700;
+  color: var(--primary-dark);
+  font-size: 0.95rem;
+}
+
+.achievement-desc {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+
+
 /* MEDIAQUERYS */
 
 @media (min-width: 900px) {

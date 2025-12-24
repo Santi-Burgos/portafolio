@@ -6,6 +6,8 @@ import About from './components/about.jsx';
 import Carousel from './ui/carrousel.jsx'
 import { FaCode } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa6";
+import  CardExperience  from './components/experience.jsx';
+import { experienceData } from './data/experience.js';
 
 import './styles/App.css';
 
@@ -20,14 +22,20 @@ function App() {
           <Presentation />
           <div className="section-divider"></div>
         </section>
-
-        <section className='experience' id='experience'>
-          
+        <section className='projects-section' id='experience'>
+            <div className='projects-presentation'>
+              <h2 className='gradient-text'>
+                <FaCode/>
+                <p>EXPERIENCIA</p>
+              </h2>
+            </div>
+            <CardExperience experience={experienceData}/>
+            <div className="section-divider"></div>
         </section>
 
         <section className='projects-section' id='projects'>
           <div className='projects-presentation'>
-            <h2 className="gradient-text"><FaCode/><p>PROYECTOS PERSONALES</p></h2>
+            <h2 className="gradient-text"><FaCode/><p>PROYECTOS</p></h2>
           </div>
             <Projects />
           <div className="section-divider"></div>
