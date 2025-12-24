@@ -1,4 +1,4 @@
-import companyImg from './../assets/images/icon.png'
+import companyImg from './../assets/images/Sin título.jpeg'
 
 export const experienceData = {
   company: "APX 360",
