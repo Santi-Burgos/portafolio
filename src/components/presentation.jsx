@@ -5,8 +5,6 @@ import { GoCheckCircle } from "react-icons/go";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { BiLogoGmail } from "react-icons/bi";
 
-
-
 function Presentation() {
   return (
     <div className="precontenedor-profile">      

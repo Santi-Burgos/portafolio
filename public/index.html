@@ -22,9 +22,20 @@
     <meta name="twitter:description" content="Portafolio web de Santiago Burgos, desarrollador Full Stack: Node, Express, React, MySQL, PostgreSQL" />
     <meta name="twitter:image" content="https://burgos-portafolio.netlify.app/logo192.png" />
 
-    <!-- Fuentes -->
+    <!-- Fuentes con Fallback rápido -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect"href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="prefetch" href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap">
+    
+    <!-- Fallback font mientras carga -->
+    <style>
+      @font-face {
+        font-family: 'Geist-Fallback';
+        src: local('Segoe UI'), local('Ubuntu'), local('Roboto');
+      }
+      body, a { font-family: 'Geist', 'Segoe UI', sans-serif; }
+    </style>
 
   
     <link rel="apple-touch-icon" href="https://burgos-portafolio.netlify.app/logo192.png" />
