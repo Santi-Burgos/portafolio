@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import NavBar from './components/navbar.jsx';
 import Presentation from './components/presentation.jsx';
 import  Projects from './components/projects.jsx'
 import About from './components/about.jsx';
@@ -8,17 +6,13 @@ import { FaCode } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa6";
 import  CardExperience  from './components/experience.jsx';
 import { experienceData } from './data/experience.js';
-
 import './styles/App.css';
 
 function App() {
-  const [openNav, setOpenNav] = useState(false);
-
   return (
     <div className="App">
       <main className="body-bg">
         <section className='presentation' id='presentation'>
-          <NavBar open={openNav} toggleNav={() => setOpenNav(!openNav)} />
           <Presentation />
           <div className="section-divider"></div>
         </section>

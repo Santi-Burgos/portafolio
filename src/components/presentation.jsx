@@ -16,9 +16,9 @@ function Presentation() {
             <h2 className="gradient-text">Software developer</h2>
           </div>  
           <div className="buttons-container">
-            <ContactButton icon={FaLinkedin} link="https://www.linkedin.com/in/santiago-burgos-914215246/"  />
-            <ContactButton icon={FaGithub} link="https://github.com/Santi-Burgos" />
-            <ContactButton icon={BiLogoGmail} email="santiburgos38@gmail.com"  />
+            <ContactButton icon={FaLinkedin} link="https://www.linkedin.com/in/santiago-burgos-914215246/" name="LinkedIn"/>
+            <ContactButton icon={FaGithub} link="https://github.com/Santi-Burgos" name="GitHub" />
+            <ContactButton icon={BiLogoGmail} email="santiburgos38@gmail.com" name="Email" />
           </div>
         <div className="button-view-projects">
               <div className="status-buttons">

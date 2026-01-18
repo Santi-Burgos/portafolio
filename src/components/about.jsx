@@ -1,4 +1,4 @@
-import profilePic from '../assets/images/profile.jpg';
+import profilePic from '../assets/images/profile.webp';
 import Interests from '../ui/skill.jsx';
 
 function About(){
