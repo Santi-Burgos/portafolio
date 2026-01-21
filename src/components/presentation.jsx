@@ -25,7 +25,7 @@ function Presentation() {
                   <span className="available-text">Disponible</span>
                 </div>
                 <a
-                  href="/Santiago-BurgosCV.pdf"
+                  href="/SantiagoBurgos-2026-cv.pdf"
                   className="download-box"
                   target="_blank"
                   rel="noopener noreferrer" 
