@@ -524,6 +524,7 @@ html {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(calc(-1 * var(--set-width, calc(100% / 3))));
   }
@@ -561,7 +562,8 @@ html {
 .profile-img-enhanced {
   width: 280px;
   height: 280px;
-  border-radius: 30px; /* Modern rounded corners instead of perfect circle */
+  border-radius: 30px;
+  /* Modern rounded corners instead of perfect circle */
   object-fit: cover;
   border: 2px solid rgba(33, 230, 193, 0.3);
   position: relative;
@@ -671,11 +673,11 @@ html {
     flex-direction: column;
     gap: 2rem;
   }
-  
+
   .about-text-card p {
     text-align: center;
   }
-  
+
   .interest-item {
     justify-content: center;
   }
@@ -721,7 +723,7 @@ html {
   grid-column: 2;
   justify-self: center;
   position: relative;
-  top: 34px;
+  top: 40px;
   width: 60px;
   height: 60px;
   background: #011627;
