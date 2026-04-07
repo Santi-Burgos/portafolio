@@ -10,7 +10,7 @@ const Interests = () => {
 
   return (
     <div className="interests-container">
-      <h3 className="gradient-text">INTERESES</h3>
+      <h3 className="interest-title">INTERESES</h3>
       <div className="interests-grid">
         {interestData.map((item, index) => (
           <div key={index} className="interest-item">
