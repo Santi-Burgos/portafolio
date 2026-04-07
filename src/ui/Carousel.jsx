@@ -1,3 +1,4 @@
+import React, { useRef, useLayoutEffect } from "react";
 import cssIcon from "../assets/icons/css.svg";
 import Expressjs from "../assets/icons/Express.js_dark.svg";
 import git from "../assets/icons/git.svg";
@@ -24,11 +25,29 @@ const images = [
 ];
 
 export default function Carousel() {
+  const trackRef = useRef(null);
   const items = [...images, ...images, ...images];
+
+  useLayoutEffect(() => {
+    const updateSize = () => {
+      if (trackRef.current) {
+        // Measure exactly one third of the track (one set of icons)
+        const setWidth = trackRef.current.scrollWidth / 3;
+        trackRef.current.style.setProperty("--set-width", `${setWidth}px`);
+      }
+    };
+
+    // Initial measurement
+    updateSize();
+
+    // Re-measure on window resize to maintain pixel perfection
+    window.addEventListener("resize", updateSize);
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
 
   return (
     <div className="tech-carousel">
-      <div className="carousel-track">
+      <div className="carousel-track" ref={trackRef}>
         {items.map((item, i) => (
           <div className="carousel-item" key={i}>
             <img src={item.src} alt={item.name} title={item.name} />
