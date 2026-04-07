@@ -4,19 +4,31 @@ import Interests from '../ui/Interests.jsx';
 function About() {
   return (
     <div className="about-me-content">
-      <div className="about-details">
-        <div className='container-image-text'>
-          <img src={profilePic} alt="Santiago Burgos - Foto de perfil" />
+      <div className="about-main">
+        <div className="about-image-container">
+          <img src={profilePic} alt="Santiago Burgos - Foto de perfil" className="profile-img-enhanced" />
+          <div className="image-border-glow"></div>
         </div>
-        <div className="about-text">
-          <p>
-            Desarrollador web junior con orientación al backend y formación práctica en desarrollo con JavaScript, 
-            principalmente utilizando Node.js y Express. He trabajado en proyectos personales, lo que me ha permitido fortalecer mis habilidades en diseño y desarrollo.
-            Tengo conocimientos de frontend y me interesa seguir creciendo en entornos donde pueda aportar en la construcción de soluciones escalables.
-          </p>
+        
+        <div className="about-description">
+          <div className="about-text-card">
+            <p>
+              Desarrollador backend, con experiencia práctica en el desarrollo de aplicaciones utilizando <span>JavaScript</span>, <span>Node.js</span> y <span>Nestjs</span>.
+            </p>
+            <p>
+              He trabajado en proyectos reales, participando en el diseño de APIs, optimización de rendimiento y mejora de arquitectura.
+              Cuento con conocimientos de frontend que me permiten tener una visión integral del producto.
+            </p>
+            <p>
+              Me interesa seguir creciendo en entornos donde pueda aportar en la construcción de soluciones escalables y mantenibles.
+            </p>
+          </div>
         </div>
       </div>
-      <Interests />
+      
+      <div className="about-interests-wrapper">
+        <Interests />
+      </div>
     </div>
   );
 }

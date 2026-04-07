@@ -7,34 +7,60 @@ import { BiLogoGmail } from "react-icons/bi";
 
 function Presentation() {
   return (
-    <div className="precontenedor-profile">      
-        <div className="container-profile">
-          <div className="profile-text">
-            <h1 className="gradient-text">Burgos <span className="block-name">Santiago</span></h1>
-            <h2 className="gradient-text">Software developer</h2>
-          </div>  
-          <div className="buttons-container">
-            <ContactButton icon={FaLinkedin} link="https://www.linkedin.com/in/santiago-burgos-914215246/" name="LinkedIn"/>
-            <ContactButton icon={FaGithub} link="https://github.com/Santi-Burgos" name="GitHub" />
-            <ContactButton icon={BiLogoGmail} email="santiburgos38@gmail.com" name="Email" />
+    <div className="presentation-container">
+      <div className="presentation-aura"></div>
+
+      <div className="presentation-content">
+        <div className="profile-header">
+          <h1 className="hero-name animate-reveal">
+            Burgos <span className="highlight">Santiago</span>
+          </h1>
+          <div className="role-container animate-reveal-delayed">
+            <h2 className="hero-role">
+              Backend Developer
+            </h2>
+            <div className="role-underscore"></div>
           </div>
-        <div className="button-view-projects">
-              <div className="status-buttons">
-                <div className="available-box">
-                  <GoCheckCircle className="icon available-icon" />
-                  <span className="available-text">Disponible</span>
-                </div>
-                <a
-                  href="/SantiagoBurgos-2026-cv.pdf"
-                  className="download-box"
-                  target="_blank"
-                  rel="noopener noreferrer" 
-                >
-                  <IoCloudDownloadOutline className="icon download-icon" />
-                  <span className="download-text">Descargar CV</span>
-                </a>
-              </div>
-            </div>
+        </div>
+
+        <div className="presentation-actions animate-fade-in">
+          <div className="action-group primary-actions">
+            <a
+              href="/SantiagoBurgos-2026-cv.pdf"
+              className="cv-download-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IoCloudDownloadOutline className="btn-icon" />
+              <span>Descargar CV</span>
+            </a>
+            <ContactButton
+              icon={BiLogoGmail}
+              email="santiburgos38@gmail.com"
+              name="Email"
+              className="email-contact-btn"
+            />
+          </div>
+
+          <div className="action-group social-links">
+            <ContactButton
+              icon={FaLinkedin}
+              link="https://www.linkedin.com/in/santiago-burgos-914215246/"
+              name="LinkedIn"
+              className="social-btn"
+            />
+            <ContactButton
+              icon={FaGithub}
+              link="https://github.com/Santi-Burgos"
+              name="GitHub"
+              className="social-btn"
+            />
+          </div>
+        </div>
+        <div className="professional-status animate-pop-in">
+          <GoCheckCircle className="status-icon" />
+          <span>Disponible para nuevos desafíos</span>
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ContactButton = ({ icon: Icon, link, email, name }) => {
+const ContactButton = ({ icon: Icon, link, email, name, className = "" }) => {
   const [copied, setCopied] = useState(false);
 
   const handleClick = async (e) => {
@@ -21,11 +21,12 @@ const ContactButton = ({ icon: Icon, link, email, name }) => {
       href={link || "#"}
       target={link ? "_blank" : undefined}
       rel={link ? "noopener noreferrer" : undefined}
-      className="contact-button"
-      araial-label={name}
+      className={`contact-button ${className}`}
+      aria-label={name}
       onClick={handleClick}
     >
       <span className="contact-icon"><Icon /></span>
+      {name && <span className="contact-name">{name}</span>}
       {copied && <span className="copied-msg"> ¡Email Copiado! </span>}
     </a>
   );
