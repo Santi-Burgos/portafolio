@@ -4,10 +4,10 @@ import { FaGithub } from "react-icons/fa";
 const ProjectCard = ({ icon: Icon,link, name, description, img, alt, stack, linkFront, linkDeploy}) => {
   return (
     <div className="projects-card">
+      <div className="container-image-card">
+        <img src={img} alt={alt} />
+      </div>
       <div className="body-card">
-        <div className="container-image-card">
-          <img src={img} alt={alt} />
-        </div>
         <div className="container-title-card">
           <p>{name}</p>
         </div>
