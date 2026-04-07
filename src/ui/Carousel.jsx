@@ -6,20 +6,25 @@ import nodejs from "../assets/icons/nodejs.svg";
 import postgresql from "../assets/icons/postgresql.svg";
 import reactIcon from "../assets/icons/React_dark.svg";
 import javaScript from "../assets/icons/javascript.svg";
+import nestJs from "../assets/icons/nestjs.svg"
+import supabase from "../assets/icons/supabase.svg"
+
 
 const images = [
   { src: nodejs, name: "Node.js" },
-  {src: javaScript, name: "JavaScript"},
+  { src: javaScript, name: "JavaScript"},
   { src: Expressjs, name: "Express.js" },
   { src: mysql, name: "MySQL" },
-  { src: postgresql, name: "PostgreSQL" },
+  { src: postgresql, name: "Postgre" },
   { src: reactIcon, name: "React" },
   { src: cssIcon, name: "CSS" },
   { src: git, name: "Git" },
+  { src: nestJs, name: "Nestjs"},
+  { src: supabase, name: "Supabase"}
 ];
 
 export default function Carousel() {
-  const items = [...images, ...images];
+  const items = [...images, ...images, ...images];
 
   return (
     <div className="tech-carousel">
