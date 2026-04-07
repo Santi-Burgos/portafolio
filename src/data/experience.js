@@ -3,10 +3,31 @@ import defaultCompanyImg from './../assets/images/company.webp'
 
 export const experiences = [
   {
+    company: "Aythen",
+    role: "Fullstack | Freelance",
+    img: defaultCompanyImg,
+    period: "Enero - Actualidad",
+    intro: "Desarrollo Fullstack centrado en la resolución de problemas críticos en entornos SaaS y mejora continua de la arquitectura",
+    achievements: [
+      {
+        title: "Optimización de performance",
+        description: "Implementé estrategias de In-Memory Caching y Request Deduplication, logrando una reducción del 60% en los tiempos de respuesta del backend en secciones críticas."
+      },
+      {
+        title: "Refactorización y modularización",
+        description: "Modularicé componentes, separando lógica en estructuras re utilizables y eliminando codigo duplicado"
+      },
+      {
+        title: "Arquitectura y escalabilidad",
+        description: "Participé en la mejora de la arquitectura del sistema para facilitar la escalabilidad y el mantenimiento"
+      }
+    ]
+  },
+  {
     company: "APX 360",
     role: "Backend | Freelance",
     img: companyImg,
-    period: "Septiembre - Enero 2026",
+    period: "Septiembre 2025 - Enero ",
     intro: "Liderazgo del desarrollo backend en el ciclo de vida completo de MVPs y sistemas escalables en producción.",
     achievements: [
       {
@@ -28,27 +49,6 @@ export const experiences = [
       {
         title: "Integración de IA Generativa",
         description: "Integré la API de OpenAI para la creación de contenido dinámico."
-      }
-    ]
-  },
-  {
-    company: "Aythen",
-    role: "Fullstack | Freelance",
-    img: defaultCompanyImg,
-    period: "Enero - Actualidad",
-    intro: "Desarrollo Fullstack centrado en la resolución de problemas críticos en entornos SaaS y mejora continua de la arquitectura",
-    achievements: [
-      {
-        title: "Optimización de performance",
-        description: "Implementé estrategias de In-Memory Caching y Request Deduplication, logrando una reducción del 60% en los tiempos de respuesta del backend en secciones críticas."
-      },
-      {
-        title: "Refactorización y modularización",
-        description: "Modularicé componentes, separando lógica en estructuras re utilizables y eliminando codigo duplicado"
-      },
-      {
-        title: "Arquitectura y escalabilidad",
-        description: "Participé en la mejora de la arquitectura del sistema para facilitar la escalabilidad y el mantenimiento"
       }
     ]
   }

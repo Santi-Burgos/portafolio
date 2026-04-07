@@ -25,9 +25,9 @@ function App() {
                 <p>EXPERIENCIA</p>
               </h2>
             </div>
-            <div className='experience-container'>
+            <div className='timeline-container'>
               {experiences.map((exp, index) => (
-                <Experience key={index} experience={exp} />
+                <Experience key={index} index={index} experience={exp} />
               ))}
             </div>
             <div className="section-divider"></div>
