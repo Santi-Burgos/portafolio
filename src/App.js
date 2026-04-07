@@ -5,7 +5,8 @@ import Carousel from './ui/carrousel.jsx'
 import { FaCode } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa6";
 import  CardExperience  from './components/experience.jsx';
-import { experienceData } from './data/experience.js';
+import { experienceData, experienceAythen } from './data/experience.js';
+
 import './styles/App.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
               </h2>
             </div>
             <CardExperience experience={experienceData}/>
+            <CardExperience experience={experienceAythen}/>
             <div className="section-divider"></div>
         </section>
 

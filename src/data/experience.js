@@ -1,10 +1,11 @@
 import companyImg from './../assets/images/Sin título.jpeg'
+import defaultCompanyImg from './../assets/images/company.webp'
 
 export const experienceData = {
   company: "APX 360",
   role: "Backend | Freelance",
   img: companyImg, 
-  period: "Septiembre - Actualidad",
+  period: "Septiembre - Enero 2026",
   intro: "He participado en el ciclo de vida completo de múltiples proyectos (MVPs y sistemas en producción), asumiendo el liderazgo del desarrollo backend y priorizando la escalabilidad.",
   achievements: [
     {
@@ -29,3 +30,25 @@ export const experienceData = {
     }
   ]
 };
+
+export const experienceAythen = {
+  compay: "Aythen",
+  role: "Fullstack | Freelance",
+  img: defaultCompanyImg,
+  period: "Enero - Actualidad",
+  intro: "Particé en el desarrollo y resolución de problemas presentados en el Saas, además de participar activamente con sugerencias de mejora",
+  achievements: [
+    {
+      title: "Optimización de performance",
+      description: "Implementé estrategia de caché en memoria y request flying reduciendo en un 60% el tiempo de respuestas de secciones al backend"
+    },
+    {
+      title: "Refactorización y modularización",
+      description: "Modularicé componentes, separando lógica en estructuras re utilizables y eliminando codigo duplicado"
+    },
+    {
+      title: "Arquitectura y escalabilidad",
+      description: "Participé en la mejora de la arquitectura del sistema para facilitar la escalabilidad y el mantenimiento"
+    }
+  ]
+}
