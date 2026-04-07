@@ -1,4 +1,4 @@
-function CardExperience({ experience }) {
+function Experience({ experience }) {
   return (
     <div className="experience-card">
       <div className="profile-company">
@@ -6,9 +6,11 @@ function CardExperience({ experience }) {
       </div>
       
       <div className="experience-body">
-        <h2>{experience.company}</h2>
-        <p className="experience-role">{experience.role}</p>
-        <div className="experience-period">{experience.period}</div>
+        <div className="experience-header">
+          <h2>{experience.company}</h2>
+          <p className="experience-role">{experience.role}</p>
+          <div className="experience-period">{experience.period}</div>
+        </div>
         
         <div className="experience-content">
           <div className="experience-intro">{experience.intro}</div>
@@ -27,4 +29,4 @@ function CardExperience({ experience }) {
   );
 }
 
-export default CardExperience
+export default Experience;

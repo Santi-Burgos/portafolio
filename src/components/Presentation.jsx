@@ -1,4 +1,4 @@
-import ContactButton from "../ui/contactButton.jsx";
+import ContactButton from "../ui/ContactButton.jsx";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { GoCheckCircle } from "react-icons/go";

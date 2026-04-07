@@ -2,7 +2,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseCircleOutline } from "react-icons/io5";
 
 
-function NavBar({ open, toggleNav }) {
+function Navbar({ open, toggleNav }) {
   return (
     <div className={`App-header ${open ? "open-header" : ""}`}>
       <nav className="navbar">
@@ -20,4 +20,4 @@ function NavBar({ open, toggleNav }) {
   );  
 }
 
-export default NavBar;
+export default Navbar;
