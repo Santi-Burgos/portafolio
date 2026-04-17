@@ -16,7 +16,7 @@ const images = [
   { src: javaScript, name: "JavaScript"},
   { src: Expressjs, name: "Express.js" },
   { src: mysql, name: "MySQL" },
-  { src: postgresql, name: "Postgre" },
+  { src: postgresql, name: "PostgreSQL"},
   { src: reactIcon, name: "React" },
   { src: cssIcon, name: "CSS" },
   { src: git, name: "Git" },
@@ -31,16 +31,13 @@ export default function Carousel() {
   useLayoutEffect(() => {
     const updateSize = () => {
       if (trackRef.current) {
-        // Measure exactly one third of the track (one set of icons)
         const setWidth = trackRef.current.scrollWidth / 3;
         trackRef.current.style.setProperty("--set-width", `${setWidth}px`);
       }
     };
 
-    // Initial measurement
     updateSize();
 
-    // Re-measure on window resize to maintain pixel perfection
     window.addEventListener("resize", updateSize);
     return () => window.removeEventListener("resize", updateSize);
   }, []);
