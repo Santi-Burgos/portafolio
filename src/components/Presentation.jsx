@@ -34,15 +34,15 @@ function Presentation() {
               <IoCloudDownloadOutline className="btn-icon" />
               <span>Descargar CV</span>
             </a>
+          </div>
+
+          <div className="action-group social-links">
             <ContactButton
               icon={BiLogoGmail}
               email="santiburgos38@gmail.com"
               name="Email"
               className="email-contact-btn"
             />
-          </div>
-
-          <div className="action-group social-links">
             <ContactButton
               icon={FaLinkedin}
               link="https://www.linkedin.com/in/santiago-burgos-914215246/"

@@ -1,7 +1,8 @@
 import apiEcommerce from '../assets/images/apiecommerce.webp';
-import projectChat from '../assets/images/chatgrupal.webp';
-import { FaReact, FaNodeJs } from "react-icons/fa";
+import projectChat from '../assets/images/chatgrupalnew.webp';
+import { FaReact, FaNodeJs, FaJava } from "react-icons/fa";
 import { SiExpress, SiMysql, SiPostgresql } from "react-icons/si";
+import javaProject from '../assets/images/javaproject.webp'
 
 export const projectsData = [
   {
@@ -22,5 +23,13 @@ export const projectsData = [
     linkFront: "https://github.com/Santi-Burgos/group-project-frontend",
     stack: [FaReact, SiExpress, SiPostgresql, FaNodeJs],
     linkDeploy: "http://chatgrupal.netlify.app/"
+  },
+  {
+    link: "https://github.com/Santi-Burgos/projectDates",
+    name: "Gestor de citas - en proceso",
+    description: "API desarrollada en Java vanilla diseñada para gestionar alta concurrencia en sistemas de turnos masivos. Implementa Clean Architecture y un sistema de bloqueo distribuido con Redis, garantizando la integridad de datos mediante transaccionalidad en PostgreSQL para evitar el overbooking.",
+    img: javaProject,
+    alt: "Foto del gestor de citas",
+    stack: [FaJava, SiPostgresql],
   }
 ];
