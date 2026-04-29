@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:wght@300;400;500;600&display=swap');
 
 html,
 body,
@@ -141,6 +141,10 @@ html {
   align-items: center;
   position: relative;
   background-color: #000000;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
 }
 
 .presentation-aura {
@@ -164,6 +168,18 @@ html {
   opacity: 0.7;
 }
 
+.code-particle {
+  position: absolute;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgba(255, 255, 255, 0.04);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  pointer-events: none;
+  z-index: 0;
+  user-select: none;
+  font-weight: 300;
+  animation: floating-code 10s ease-in-out infinite;
+}
+
 .presentation-content {
   position: relative;
   z-index: 1;
@@ -181,13 +197,18 @@ html {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  background: rgba(104, 45, 4, 0.1);
   border: 1px solid rgba(255, 106, 0, 0.2);
   padding: 8px 16px;
   border-radius: 100px;
   color: #ff6a00;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
   box-shadow: 0 4px 15px rgba(255, 106, 0, 0.05);
+  margin-top: 1rem;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .status-icon {
@@ -199,6 +220,7 @@ html {
   flex-direction: column;
   gap: 0.5rem;
   font-family: 'Merriweather', serif;
+  align-items: center;
 }
 
 .hero-name {
@@ -229,19 +251,47 @@ html {
 }
 
 .hero-role {
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.7);
-  letter-spacing: 4px;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 5px;
   text-transform: uppercase;
   margin: 0;
+  font-family: 'Inter', sans-serif;
 }
 
-.role-underscore {
-  width: 60px;
-  height: 4px;
+.hero-tagline {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  gap: 0.5rem;
+}
+
+.tagline-main {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.tagline-stack {
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.tagline-divider {
+  width: 50px;
+  height: 2px;
   background: #ff6a00;
-  border-radius: 2px;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .presentation-actions {
@@ -1087,6 +1137,18 @@ html {
 
   to {
     opacity: 1;
+  }
+}
+
+@keyframes floating-code {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(5deg);
   }
 }
 
