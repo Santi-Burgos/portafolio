@@ -13,14 +13,14 @@ function About() {
         <div className="about-description">
           <div className="about-text-card">
             <p>
-              Desarrollador backend, con experiencia práctica en el desarrollo de aplicaciones utilizando <span>JavaScript</span>, <span>Node.js</span> y <span>Nestjs</span>.
+               Santiago Burgos, desarrollador backend especializado en <span>Node.js</span>, <span>NestJS</span> y <span>Bases de datos</span>.
             </p>
             <p>
-              He trabajado en proyectos reales, participando en el diseño de APIs, optimización de rendimiento y mejora de arquitectura.
-              Cuento con conocimientos de frontend que me permiten tener una visión integral del producto.
+              Me enfoco en construir APIs claras, optimizar performance y diseñar sistemas desacoplados que escalen sin volverse inmantenibles.
+              Con conocimientos de frontend para entender el producto completo, no solo el backend.
             </p>
             <p>
-              Me interesa seguir creciendo en entornos donde pueda aportar en la construcción de soluciones escalables y mantenibles.
+              Busco sumarme a un equipo con desafíos que me impulsen a crecer y construir soluciones con impacto real.
             </p>
           </div>
         </div>

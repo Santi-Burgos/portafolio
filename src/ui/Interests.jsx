@@ -1,13 +1,6 @@
-import { FaServer, FaChartLine, FaCubes, FaCode } from 'react-icons/fa6';
+import { interestData } from '../data/interests';
 
 const Interests = () => {
-  const interestData = [
-    { icon: <FaServer />, text: "Diseño y desarrollo de APIs escalables y mantenibles." },
-    { icon: <FaChartLine />, text: "Optimización de performance en aplicaciones backend." },
-    { icon: <FaCubes />, text: "Arquitecturas desacopladas y sistemas en tiempo real." },
-    { icon: <FaCode />, text: "Buenas prácticas de código y modularización." }
-  ];
-
   return (
     <div className="interests-container">
       <h3 className="interest-title">INTERESES</h3>

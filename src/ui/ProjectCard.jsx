@@ -16,11 +16,14 @@ const ProjectCard = ({ icon: Icon,link, name, description, img, alt, stack, link
         </div>
         <div className="tech-stack">
             <ul>
-            {stack.map((Icon, index) => (
-                <li key={index}>
-                    <Icon key={index} /> 
-                </li>
-            ))}
+            {stack.map((tech, index) => {
+                const IconComponent = tech.icon;
+                return (
+                  <li key={index} data-tooltip={tech.name}>
+                      <IconComponent /> 
+                  </li>
+                );
+            })}
             </ul>
         </div>
         <div className="buttons-links">
