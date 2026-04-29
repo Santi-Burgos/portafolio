@@ -9,6 +9,7 @@ export const experiences = [
     role: "Fullstack | Freelance",
     img: defaultCompanyImg,
     period: "Enero 2026 - Actualidad",
+    period: "Enero 2026 - Actualidad",
     intro: "Desarrollo Fullstack centrado en la resolución de problemas críticos en entornos SaaS y mejora continua de la arquitectura",
     achievements: [
       {
@@ -34,6 +35,7 @@ export const experiences = [
     company: "APX 360",
     role: "Backend | Freelance",
     img: companyImg,
+    period: "Septiembre 2025 - Enero 2026 ",
     period: "Septiembre 2025 - Enero 2026 ",
     intro: "Liderazgo del desarrollo backend en el ciclo de vida completo de MVPs y sistemas escalables en producción.",
     achievements: [
