@@ -6,7 +6,7 @@ function About() {
     <div className="about-me-content">
       <div className="about-main">
         <div className="about-image-container">
-          <img src={profilePic} alt="Santiago Burgos - Foto de perfil" className="profile-img-enhanced" />
+          <img src={profilePic} alt="Santiago Burgos - Foto de perfil" className="profile-img-enhanced" width="280" height="280" loading="lazy" />
           <div className="image-border-glow"></div>
         </div>
         

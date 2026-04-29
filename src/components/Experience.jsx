@@ -4,7 +4,7 @@ function Experience({ experience, index }) {
   return (
     <div className={`timeline-item ${isEven ? 'left' : 'right'}`}>
       <div className="timeline-dot">
-        <img alt={experience.company} src={experience.img} />
+        <img alt={experience.company} src={experience.img} loading="lazy" width="60" height="60" />
       </div>
       
       <div className="timeline-content-card">
@@ -28,8 +28,8 @@ function Experience({ experience, index }) {
             {experience.stack.map((tech, index)=>{
               const IconComponent = tech.icon;
               return(
-                <li key={index} data-tooltip={tech.name}>
-                  <IconComponent />
+                <li key={index} data-tooltip={tech.name} aria-label={tech.name}>
+                  <IconComponent aria-hidden="true" />
                 </li>
               );            
             })

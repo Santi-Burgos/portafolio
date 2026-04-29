@@ -6,7 +6,12 @@ function Navbar({ open, toggleNav }) {
   return (
     <div className={`App-header ${open ? "open-header" : ""}`}>
       <nav className="navbar">
-        <button className="menu-toggle" onClick={toggleNav}>
+        <button 
+          className="menu-toggle" 
+          onClick={toggleNav}
+          aria-label={open ? "Cerrar menú" : "Abrir menú"}
+          aria-expanded={open}
+        >
           {open ? <IoCloseCircleOutline /> : <GiHamburgerMenu />}
         </button>
 
