@@ -22,8 +22,8 @@ export const projectsData = [
   },
   {
     link: "https://github.com/Santi-Burgos/projectDates",
-    name: "Gestor de citas - en proceso",
-    description: "API desarrollada en Java vanilla diseñada para gestionar alta concurrencia en sistemas de turnos masivos. Implementa Clean Architecture y un sistema de bloqueo distribuido con Redis, garantizando la integridad de datos mediante transaccionalidad en PostgreSQL para evitar el overbooking.",
+    name: "Gestor de citas",
+    description: "API desarrollada en Java vanilla diseñada para gestionar alta concurrencia en sistemas de turnos masivos. Implementa Clean Architecture y un sistema de bloqueo distribuido con Redis, garantizando la integridad de datos mediante transaccionalidad en PostgreSQL para evitar el overbooking.  (En proceso)",
     img: javaProject,
     alt: "Foto del gestor de citas",
     stack: [

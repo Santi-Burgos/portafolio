@@ -7,7 +7,7 @@ const Interests = () => {
       <div className="interests-grid">
         {interestData.map((item, index) => (
           <div key={index} className="interest-item">
-            <span className="interest-icon">{item.icon}</span>
+            <span className="interest-icon" aria-hidden="true">{item.icon}</span>
             <span className="interest-text">{item.text}</span>
           </div>
         ))}

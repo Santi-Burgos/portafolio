@@ -1,14 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaCode } from 'react-icons/fa';
 import { skillsData } from '../data/skills';
 
 const TechStack = () => {
+
+  const [isTech, setIsTech] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsTech(window.innerWidth < 580);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  
+
+
   return (
     <section className="tech-stack-section" id="stack">
       <div className="projects-presentation">
         <h2 className="gradient-text">
           <FaCode />
-          <p>HABILIDADES Y TECNOLOGÍAS</p>
+          <p>
+            {isTech ? "TECNOLOGÍAS" : "HABILIDADES Y TECNOLOGÍAS"}
+            
+          </p>
         </h2>
       </div>
 

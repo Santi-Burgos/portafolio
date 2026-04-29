@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:wght@300;400;500;600&display=swap');
+/* Fonts moved to index.html for performance */
 
 html,
 body,
@@ -66,7 +66,9 @@ html {
 
 .menu-toggle {
   background: none;
-  height: 100%;
+  height: 48px;
+  width: 48px;
+  padding: 8px;
   border: none;
   cursor: pointer;
   font-size: 2rem;
@@ -74,6 +76,9 @@ html {
   outline: none;
   z-index: 10;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu {
@@ -385,11 +390,13 @@ html {
 }
 
 .social-btn {
-  padding: 12px;
+  padding: 14px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.05);
   color: rgba(255, 255, 255, 0.6);
   font-size: 1.4rem;
+  min-width: 48px;
+  min-height: 48px;
 }
 
 .social-btn:hover {
@@ -505,7 +512,7 @@ html {
   transform: scale(1.1);
 }
 
-.container-title-card p {
+.container-title-card h3 {
   font-size: 1.4rem;
   font-weight: 800;
   margin: 0;
@@ -570,25 +577,14 @@ html {
   box-sizing: border-box;
 }
 
-.buttons-links button {
+.project-btn {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   cursor: pointer;
-  padding: 0;
+  padding: 10px;
   flex: 1;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.buttons-links button:hover {
-  transform: translateY(-3px);
-  background: rgba(255, 106, 0, 0.05);
-  border-color: #ff6a00;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-}
-
-.buttons-links a {
-  padding: 10px;
   text-decoration: none;
   display: flex;
   color: #ffffff;
@@ -597,10 +593,13 @@ html {
   gap: 8px;
   font-weight: 600;
   font-size: 0.9rem;
-  transition: all 0.3s ease;
 }
 
-.buttons-links button:hover a {
+.project-btn:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 106, 0, 0.05);
+  border-color: #ff6a00;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
   color: #ff6a00;
 }
 
@@ -826,12 +825,9 @@ html {
   color: #ffffff;
 }
 
-.blue-theme .buttons-links button:hover {
+.blue-theme .project-btn:hover {
   background: rgba(0, 136, 255, 0.05);
   border-color: #0088ff;
-}
-
-.blue-theme .buttons-links button:hover a {
   color: #0088ff;
 }
 
@@ -1275,7 +1271,7 @@ html {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
     width: 100%;
   }
 
@@ -1303,6 +1299,50 @@ html {
 
   .interests-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 580px) {
+  .tech-cards-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+    padding: 5px 5px;
+  }
+
+  .skill-card {
+    padding: 12px;
+    gap: 1rem;
+    border-radius: 16px;
+  }
+
+  .skill-card-header {
+    gap: 0.5rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .skill-card-header h3 {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+  }
+
+  .skill-category-icon {
+    font-size: 1.2rem;
+  }
+
+  .skill-list {
+    gap: 8px;
+  }
+
+  .skill-item {
+    gap: 0.5rem;
+  }
+
+  .skill-name {
+    font-size: 0.8rem;
+  }
+
+  .skill-icon {
+    font-size: 1rem;
   }
 }
 
