@@ -23,6 +23,19 @@ function Experience({ experience, index }) {
             </li>
           ))}
         </ul>
+        <div className="tech-stack">
+          <ul style={{justifyContent: "center"}}>
+            {experience.stack.map((tech, index)=>{
+              const IconComponent = tech.icon;
+              return(
+                <li key={index} data-tooltip={tech.name}>
+                  <IconComponent />
+                </li>
+              );            
+            })
+            }
+          </ul>
+        </div>
       </div>
     </div>
   );

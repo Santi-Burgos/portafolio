@@ -1,54 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="https://burgos-portafolio.netlify.app/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    
-    <!-- Descripción -->
-    <meta name="description" content="Portafolio web de Santiago Burgos, desarrollador Full Stack: Node, Express, React, MySQL, PostgreSQL" />
-    
-    <!-- Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Santiago Burgos Portfolio" />
-    <meta property="og:description" content="Portafolio web de Santiago Burgos, desarrollador Full Stack: Node, Express, React, MySQL, PostgreSQL" />
-    <meta property="og:image" content="https://burgos-portafolio.netlify.app/logo192.png" />
-    <meta property="og:url" content="https://burgos-portafolio.netlify.app/" />
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Santiago Burgos Portfolio" />
-    <meta name="twitter:description" content="Portafolio web de Santiago Burgos, desarrollador Full Stack: Node, Express, React, MySQL, PostgreSQL" />
-    <meta name="twitter:image" content="https://burgos-portafolio.netlify.app/logo192.png" />
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="https://burgosportfolio.netlify.app/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
 
-    <!-- Fuentes optimizadas: solo pesos necesarios -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Carga crítica: pesos principales (async) -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&display=swap">
-    
-    <!-- Carga secundaria: pesos adicionales (deferred) -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@500;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@500;800&display=swap"></noscript>
-    
-    <!-- System fallback para renderizado instantáneo -->
-    <style>
-      body, a { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Geist', sans-serif; }
-      @supports (font-variation-settings: normal) {
-        body, a { font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  <!-- Descripción -->
+  <meta name="description"
+    content="Portafolio web de Santiago Burgos, desarrollador Full Stack: Node, Express, React, MySQL, PostgreSQL" />
+
+  <!-- Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Santiago Burgos Portfolio" />
+  <meta property="og:description"
+    content="Portafolio web de Santiago Burgos, desarrollador Full Stack: Node, Express, React, MySQL, PostgreSQL" />
+  <meta property="og:image" content="https://burgosportfolio.netlify.app/logo192.png" />
+  <meta property="og:url" content="https://burgosportfolio.netlify.app/" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Santiago Burgos Portfolio" />
+  <meta name="twitter:description"
+    content="Portafolio web de Santiago Burgos, desarrollador Full Stack: Node, Express, React, MySQL, PostgreSQL" />
+  <meta name="twitter:image" content="https://burgosportfolio.netlify.app/logo192.png" />
+
+  <!-- Fuentes optimizadas: solo pesos necesarios -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Carga crítica: pesos principales (async) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&display=swap">
+
+  <!-- Carga secundaria: pesos adicionales (deferred) -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@500;800&display=swap"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@500;800&display=swap">
+  </noscript>
+
+  <!-- System fallback para renderizado instantáneo -->
+  <style>
+    body,
+    a {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Geist', sans-serif;
+    }
+
+    @supports (font-variation-settings: normal) {
+
+      body,
+      a {
+        font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       }
-    </style>
+    }
+  </style>
 
-  
-    <link rel="apple-touch-icon" href="https://burgos-portafolio.netlify.app/logo192.png" />
-    <link rel="manifest" href="https://burgos-portafolio.netlify.app/manifest.json" />
 
-    <title>Santiago Burgos Portfolio</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+  <link rel="apple-touch-icon" href="https://burgosportfolio.netlify.app/logo192.png" />
+  <link rel="manifest" href="https://burgosportfolio.netlify.app/manifest.json" />
+
+  <title>Santiago Burgos Portfolio</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
 </html>

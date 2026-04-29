@@ -22,9 +22,12 @@ function Presentation() {
             <div className="role-underscore"></div>
           </div>
         </div>
-
+        <div className="professional-status animate-pop-in">
+          <GoCheckCircle className="status-icon" />
+          <span>Disponible para nuevos desafíos</span>
+        </div>
         <div className="presentation-actions animate-fade-in">
-          <div className="action-group primary-actions">
+          <div className="buttons-stack">
             <a
               href="/SantiagoBurgos-2026-cv.pdf"
               className="cv-download-btn"
@@ -34,32 +37,31 @@ function Presentation() {
               <IoCloudDownloadOutline className="btn-icon" />
               <span>Descargar CV</span>
             </a>
-            <ContactButton
-              icon={BiLogoGmail}
-              email="santiburgos38@gmail.com"
-              name="Email"
-              className="email-contact-btn"
-            />
+            
+            <div className="social-links-row">
+              <ContactButton
+                icon={BiLogoGmail}
+                email="santiburgos38@gmail.com"
+                name="Email"
+                className="social-btn"
+                showText={false}
+              />
+              <ContactButton
+                icon={FaLinkedin}
+                link="https://www.linkedin.com/in/santiago-burgos-914215246/"
+                name="LinkedIn"
+                className="social-btn"
+                showText={false}
+              />
+              <ContactButton
+                icon={FaGithub}
+                link="https://github.com/Santi-Burgos"
+                name="GitHub"
+                className="social-btn"
+                showText={false}
+              />
+            </div>
           </div>
-
-          <div className="action-group social-links">
-            <ContactButton
-              icon={FaLinkedin}
-              link="https://www.linkedin.com/in/santiago-burgos-914215246/"
-              name="LinkedIn"
-              className="social-btn"
-            />
-            <ContactButton
-              icon={FaGithub}
-              link="https://github.com/Santi-Burgos"
-              name="GitHub"
-              className="social-btn"
-            />
-          </div>
-        </div>
-        <div className="professional-status animate-pop-in">
-          <GoCheckCircle className="status-icon" />
-          <span>Disponible para nuevos desafíos</span>
         </div>
       </div>
     </div>
